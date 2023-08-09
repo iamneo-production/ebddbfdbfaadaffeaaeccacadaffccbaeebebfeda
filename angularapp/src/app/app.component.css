@@ -1,173 +1,96 @@
-*
-{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-style: italic;
-    font-size: 12px;
-    --bgcolor:rgb(247, 86, 42);
-}
-
-header
-{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    color: #fff;
-    background-color: var(--bgcolor);
-}
-
-header > span
-{
+#headerContainer{
+    
+    border: 1px solid rgb(255, 77, 0);
+    padding: 10px;
     margin: 10px;
-    font-size: 15px;
+    background-color:rgb(255, 77, 0);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-style: italic;
 }
-
-.search
-{
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#searchBox{
+    text-align: center;
+    
 }
-.search >span
-{
-    margin-bottom: 5px;
+#newFood{
+    width:  100px;
+    border: 1px solid rgb(255, 77, 0);
+    padding: auto;
+    margin: 50px;
+    background-color:rgb(255, 77, 0);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-style: italic;
+    text-align: center;
 }
-.search > input 
-{
-    width: 250px;
-}
-input[type="text"] 
-{
-    border: 1px solid rgba(0,0,0,0.5);
-    padding: 5px;
-    width: 200px;
-    outline: none;
-}
-
-button
-{
-    cursor: pointer;
-}
-#totalCalories
-{
-    position: absolute;
-    top: 90px;
-    right: 5%;
-    display: flex;
-    flex-direction: column;
-}
-
-#totalCalories > span
-{
-    margin-bottom: 5px;
-    font-size: 15px;
-    font-weight: 550;
-}
-
-#totalCalories > ul
-{
-    margin: 5px 25px;
-}
-form
-{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    row-gap: 15px;
-    margin-left: 25%;
-}
-
-form > button
-{
-    width: 100px;
-    height: 20px;
-    font-style: initial;
-    font-size: 10px;
-    padding: 5px;
-    color: #fff;
-    background-color: var(--bgcolor);
-    border: none;
-}
-
-label
-{
-    margin-right: 5px;
-}
-
-#displayContainer
-{
+.wrap{
     display: grid;
-    grid-template-columns: repeat(1,800px);
-    width: 800px;
-    aspect-ratio: 1/1;
-    border: 1px solid rgba(0,0,0,0.5);
-    border-radius: 40px;
+    grid-template-columns: 1fr;
+    gap: 0px;
+}
+#name{
+    margin:25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: auto;
+    margin-bottom: 2px;
+    margin-left: 45px;
+}
+#calories{
+    margin:25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: auto;
+    margin-bottom: 2px;
+    margin-left: 45px;
+}
+#image{
+    margin:25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: auto;
+    margin-bottom: 2px;
+    margin-left: 45px;
+}
+#button{
+    margin:25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: auto;
+    margin-bottom: 2px;
+    margin-left: 45px;
+    color: aliceblue;
+    font-style: italic;
+    text-align: center;
+    border: 1px solid rgb(255, 77, 0);
+    background-color:rgb(255, 77, 0);
+}
+#totalCalories{
+    position:absolute; 
+    right:170px; 
+    top:100px;
+
+
+}
+#displayContainer{
     margin: auto;
-    translate: 0px 20px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    border: 1px ;
+    border-style:solid;
+    border-radius: 15px;
+
+
 }
 
-#displayContainer::-webkit-scrollbar
-{
-    width: 5px;
-    height: 800px;
-    background-color: transparent;
-}
-#displayContainer::-webkit-scrollbar-thumb
-{
- background-color: #cdcdcd;
- border-radius: 10px;
-}
 
-.card
-{
-    margin: 30px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 200px;
-    border: 1px solid rgba(0,0,0,0.5);
+.arrange{
+    margin: 50px;
+    margin-right: 400px;
+    border: 1px ;
+    border-style:solid;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
 }
-
-.card > img
-{
-    margin: 5px;
-    width: 150px;
-    aspect-ratio: 1/1;
-    object-fit: contain;
-}
-
-.card > div
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 10px;
-}
-
-.card > div > span , .card >div >span > span
-{
-    font-size: 15px;
-}
-
-.card >div >span > span
-{
-    color: var(--bgcolor);
-}
-.card > div > div > button
-{
-    border: none;
-    margin-left: 5px;
-    padding: 5px;
-    color: #fff;
-    background-color: var(--bgcolor);
+#totalCalories{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
 }
